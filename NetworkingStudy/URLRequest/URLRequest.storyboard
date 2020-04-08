@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Htd-LW-QDg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--URL Request-->
+        <scene sceneID="YKX-rS-6c3">
+            <objects>
+                <viewController title="URL Request" id="Htd-LW-QDg" customClass="URLRequestViewController" customModule="NetworkingStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v6O-8V-zza">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="72" translatesAutoresizingMaskIntoConstraints="NO" id="eX8-mJ-Avt">
+                                <rect key="frame" x="34" y="282" width="346" height="332"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jiO-9I-l6w">
+                                        <rect key="frame" x="0.0" y="0.0" width="346" height="230"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="230" id="Wct-UB-Xvx"/>
+                                            <constraint firstAttribute="width" constant="346" id="nwp-Uu-5dE"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdE-we-2kZ">
+                                        <rect key="frame" x="0.0" y="302" width="346" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="346" id="bh1-7i-F17"/>
+                                            <constraint firstAttribute="height" constant="30" id="e6e-qM-sSw"/>
+                                        </constraints>
+                                        <state key="normal" title="Send Request"/>
+                                        <connections>
+                                            <action selector="sendRequest:" destination="Htd-LW-QDg" eventType="touchUpInside" id="fbh-a0-QM7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eX8-mJ-Avt" firstAttribute="centerY" secondItem="v6O-8V-zza" secondAttribute="centerY" id="RO2-hS-k9n"/>
+                            <constraint firstItem="eX8-mJ-Avt" firstAttribute="centerX" secondItem="v6O-8V-zza" secondAttribute="centerX" id="XcO-W2-u4C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AQq-z1-D2M"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="jiO-9I-l6w" id="vUM-HK-ce7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="shh-m3-6F4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+</document>
