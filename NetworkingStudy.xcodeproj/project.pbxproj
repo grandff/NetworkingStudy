@@ -17,6 +17,9 @@
 		1B0F64B2243D7EC9001E99D4 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F64B1243D7EC9001E99D4 /* Endpoints.swift */; };
 		1B0F64B4243D800A001E99D4 /* URLRequest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0F64B3243D800A001E99D4 /* URLRequest.storyboard */; };
 		1B0F64B6243D8076001E99D4 /* URLRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F64B5243D8076001E99D4 /* URLRequestViewController.swift */; };
+		1B0F64B924444260001E99D4 /* WebContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0F64B824444260001E99D4 /* WebContent.storyboard */; };
+		1B0F64BB2444426D001E99D4 /* WebContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F64BA2444426D001E99D4 /* WebContentViewController.swift */; };
+		1B0F64BE24444743001E99D4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0F64BD24444743001E99D4 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		1B0F64B1243D7EC9001E99D4 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		1B0F64B3243D800A001E99D4 /* URLRequest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = URLRequest.storyboard; sourceTree = "<group>"; };
 		1B0F64B5243D8076001E99D4 /* URLRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestViewController.swift; sourceTree = "<group>"; };
+		1B0F64B824444260001E99D4 /* WebContent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebContent.storyboard; sourceTree = "<group>"; };
+		1B0F64BA2444426D001E99D4 /* WebContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentViewController.swift; sourceTree = "<group>"; };
+		1B0F64BD24444743001E99D4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0F64BE24444743001E99D4 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +57,7 @@
 			children = (
 				1B0F6497243D7E84001E99D4 /* NetworkingStudy */,
 				1B0F6496243D7E84001E99D4 /* Products */,
+				1B0F64BC24444743001E99D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +72,7 @@
 		1B0F6497243D7E84001E99D4 /* NetworkingStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1B0F64B724444251001E99D4 /* WebContent */,
 				1B0F64B0243D7E93001E99D4 /* URLRequest */,
 				1B0F64AF243D7E8E001E99D4 /* Shared */,
 				1B0F6498243D7E84001E99D4 /* AppDelegate.swift */,
@@ -93,6 +102,23 @@
 				1B0F64B5243D8076001E99D4 /* URLRequestViewController.swift */,
 			);
 			path = URLRequest;
+			sourceTree = "<group>";
+		};
+		1B0F64B724444251001E99D4 /* WebContent */ = {
+			isa = PBXGroup;
+			children = (
+				1B0F64B824444260001E99D4 /* WebContent.storyboard */,
+				1B0F64BA2444426D001E99D4 /* WebContentViewController.swift */,
+			);
+			path = WebContent;
+			sourceTree = "<group>";
+		};
+		1B0F64BC24444743001E99D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B0F64BD24444743001E99D4 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +181,7 @@
 			files = (
 				1B0F64B4243D800A001E99D4 /* URLRequest.storyboard in Resources */,
 				1B0F64A8243D7E87001E99D4 /* LaunchScreen.storyboard in Resources */,
+				1B0F64B924444260001E99D4 /* WebContent.storyboard in Resources */,
 				1B0F64A5243D7E87001E99D4 /* Assets.xcassets in Resources */,
 				1B0F64A0243D7E84001E99D4 /* Main.storyboard in Resources */,
 			);
@@ -167,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0F64BB2444426D001E99D4 /* WebContentViewController.swift in Sources */,
 				1B0F649D243D7E84001E99D4 /* ViewController.swift in Sources */,
 				1B0F64A3243D7E84001E99D4 /* NetworkingStudy.xcdatamodeld in Sources */,
 				1B0F64B6243D8076001E99D4 /* URLRequestViewController.swift in Sources */,

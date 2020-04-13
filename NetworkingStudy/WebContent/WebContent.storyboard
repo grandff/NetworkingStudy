@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i10-eF-XB7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web Content-->
+        <scene sceneID="erR-YQ-ebU">
+            <objects>
+                <viewController id="i10-eF-XB7" customClass="WebContentViewController" customModule="NetworkingStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cX1-uB-ra2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Asa-4l-eOs">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Gc5-Wc-vkd"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" id="Yfv-YR-302">
+                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="AUI-eD-Lp6">
+                                            <rect key="frame" x="20" y="5" width="374" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="i10-eF-XB7" id="Srb-Mm-Kd8"/>
+                                            </connections>
+                                        </textField>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MW1-om-yG8">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4tS-0F-DgP"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Back" id="AJz-Wl-95V">
+                                        <connections>
+                                            <action selector="goBack:" destination="i10-eF-XB7" id="ese-Ns-gPs"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aoB-UJ-n5E"/>
+                                    <barButtonItem title="Reload" id="I1G-LJ-Veq">
+                                        <connections>
+                                            <action selector="reload:" destination="i10-eF-XB7" id="8W3-nw-Way"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aQE-OI-Evs"/>
+                                    <barButtonItem title="Forward" id="kfN-7Y-sgJ">
+                                        <connections>
+                                            <action selector="goForward:" destination="i10-eF-XB7" id="1EW-pQ-389"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8O-7A-WJT">
+                                <rect key="frame" x="0.0" y="132" width="414" height="686"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MW1-om-yG8" firstAttribute="top" secondItem="S8O-7A-WJT" secondAttribute="bottom" id="Ez9-Wg-vIX"/>
+                            <constraint firstItem="Asa-4l-eOs" firstAttribute="leading" secondItem="KR6-8o-MZU" secondAttribute="leading" id="GIu-3y-XiP"/>
+                            <constraint firstItem="MW1-om-yG8" firstAttribute="trailing" secondItem="KR6-8o-MZU" secondAttribute="trailing" id="Vhd-Ff-peb"/>
+                            <constraint firstItem="MW1-om-yG8" firstAttribute="leading" secondItem="KR6-8o-MZU" secondAttribute="leading" id="W36-RC-WRv"/>
+                            <constraint firstItem="S8O-7A-WJT" firstAttribute="leading" secondItem="KR6-8o-MZU" secondAttribute="leading" id="XZa-ga-XU3"/>
+                            <constraint firstItem="Asa-4l-eOs" firstAttribute="top" secondItem="KR6-8o-MZU" secondAttribute="top" id="dYq-xW-0Ae"/>
+                            <constraint firstItem="Asa-4l-eOs" firstAttribute="trailing" secondItem="KR6-8o-MZU" secondAttribute="trailing" id="gjz-0w-dNU"/>
+                            <constraint firstItem="MW1-om-yG8" firstAttribute="bottom" secondItem="KR6-8o-MZU" secondAttribute="bottom" id="nMJ-TP-rpQ"/>
+                            <constraint firstItem="KR6-8o-MZU" firstAttribute="trailing" secondItem="S8O-7A-WJT" secondAttribute="trailing" id="xMc-95-Nji"/>
+                            <constraint firstItem="S8O-7A-WJT" firstAttribute="top" secondItem="Asa-4l-eOs" secondAttribute="bottom" id="xSb-65-lfJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KR6-8o-MZU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Web Content" id="Awh-Lx-C08"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="urlField" destination="AUI-eD-Lp6" id="SaH-e9-ea5"/>
+                        <outlet property="webView" destination="S8O-7A-WJT" id="y4I-Yl-gb3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPR-o4-nAh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="307" y="-215"/>
+        </scene>
+    </scenes>
+</document>
