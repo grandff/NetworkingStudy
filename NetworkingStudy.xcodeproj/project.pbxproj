@@ -20,6 +20,7 @@
 		1B0F64B924444260001E99D4 /* WebContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0F64B824444260001E99D4 /* WebContent.storyboard */; };
 		1B0F64BB2444426D001E99D4 /* WebContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F64BA2444426D001E99D4 /* WebContentViewController.swift */; };
 		1B0F64BE24444743001E99D4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0F64BD24444743001E99D4 /* WebKit.framework */; };
+		1B0F64C12445A726001E99D4 /* ATS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0F64C02445A726001E99D4 /* ATS.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		1B0F64B824444260001E99D4 /* WebContent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebContent.storyboard; sourceTree = "<group>"; };
 		1B0F64BA2444426D001E99D4 /* WebContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentViewController.swift; sourceTree = "<group>"; };
 		1B0F64BD24444743001E99D4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1B0F64C02445A726001E99D4 /* ATS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ATS.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		1B0F6497243D7E84001E99D4 /* NetworkingStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1B0F64BF2445A718001E99D4 /* ATS */,
 				1B0F64B724444251001E99D4 /* WebContent */,
 				1B0F64B0243D7E93001E99D4 /* URLRequest */,
 				1B0F64AF243D7E8E001E99D4 /* Shared */,
@@ -119,6 +122,14 @@
 				1B0F64BD24444743001E99D4 /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B0F64BF2445A718001E99D4 /* ATS */ = {
+			isa = PBXGroup;
+			children = (
+				1B0F64C02445A726001E99D4 /* ATS.storyboard */,
+			);
+			path = ATS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B0F64B4243D800A001E99D4 /* URLRequest.storyboard in Resources */,
+				1B0F64C12445A726001E99D4 /* ATS.storyboard in Resources */,
 				1B0F64A8243D7E87001E99D4 /* LaunchScreen.storyboard in Resources */,
 				1B0F64B924444260001E99D4 /* WebContent.storyboard in Resources */,
 				1B0F64A5243D7E87001E99D4 /* Assets.xcassets in Resources */,
