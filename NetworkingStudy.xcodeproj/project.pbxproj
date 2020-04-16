@@ -21,6 +21,7 @@
 		1B0F64BB2444426D001E99D4 /* WebContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F64BA2444426D001E99D4 /* WebContentViewController.swift */; };
 		1B0F64BE24444743001E99D4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0F64BD24444743001E99D4 /* WebKit.framework */; };
 		1B0F64C12445A726001E99D4 /* ATS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0F64C02445A726001E99D4 /* ATS.storyboard */; };
+		1B0F64C624480458001E99D4 /* ATSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F64C524480458001E99D4 /* ATSViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		1B0F64BA2444426D001E99D4 /* WebContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentViewController.swift; sourceTree = "<group>"; };
 		1B0F64BD24444743001E99D4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		1B0F64C02445A726001E99D4 /* ATS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ATS.storyboard; sourceTree = "<group>"; };
+		1B0F64C524480458001E99D4 /* ATSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATSViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				1B0F64C02445A726001E99D4 /* ATS.storyboard */,
+				1B0F64C524480458001E99D4 /* ATSViewController.swift */,
 			);
 			path = ATS;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B0F64BB2444426D001E99D4 /* WebContentViewController.swift in Sources */,
+				1B0F64C624480458001E99D4 /* ATSViewController.swift in Sources */,
 				1B0F649D243D7E84001E99D4 /* ViewController.swift in Sources */,
 				1B0F64A3243D7E84001E99D4 /* NetworkingStudy.xcdatamodeld in Sources */,
 				1B0F64B6243D8076001E99D4 /* URLRequestViewController.swift in Sources */,

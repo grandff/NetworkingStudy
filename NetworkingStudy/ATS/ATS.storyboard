@@ -1,8 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Etd-At-bgm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--App Transport Security-->
+        <scene sceneID="vov-Zt-R2x">
+            <objects>
+                <viewController id="Etd-At-bgm" customClass="ATSViewController" customModule="NetworkingStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bBx-g5-WgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQa-D2-yxF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FQa-D2-yxF" firstAttribute="leading" secondItem="rgW-2r-a5P" secondAttribute="leading" id="Km0-al-Iqa"/>
+                            <constraint firstItem="FQa-D2-yxF" firstAttribute="top" secondItem="rgW-2r-a5P" secondAttribute="top" id="MZC-VV-Yj8"/>
+                            <constraint firstItem="rgW-2r-a5P" firstAttribute="trailing" secondItem="FQa-D2-yxF" secondAttribute="trailing" id="UDh-CI-9hQ"/>
+                            <constraint firstItem="rgW-2r-a5P" firstAttribute="bottom" secondItem="FQa-D2-yxF" secondAttribute="bottom" id="miN-dT-d9a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rgW-2r-a5P"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="App Transport Security" id="RAQ-x5-IAW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="otm-lT-sdY">
+                            <connections>
+                                <action selector="showMenu:" destination="Etd-At-bgm" id="gq5-8Q-qBk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="webView" destination="FQa-D2-yxF" id="bIf-vo-Oi4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xjs-UM-0c9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="96"/>
+        </scene>
+    </scenes>
 </document>
