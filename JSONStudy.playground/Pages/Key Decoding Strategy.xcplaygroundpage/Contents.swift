@@ -38,6 +38,7 @@ do{
     dump(p)
 }catch{
     print(error)
+    print(error)
 }
 
 //: [Next](@next)
